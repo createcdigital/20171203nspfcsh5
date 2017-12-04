@@ -1,0 +1,201 @@
+html, body {
+    position: relative;
+    height: 100%;
+}
+body {
+    background: white;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color:#000;
+    margin: 0;
+    padding: 0;
+}
+body,p,div,span,input,img,li,ul{
+    -webkit-user-select: none;
+    -webkit-tap-highlight-color: rgba(200,200,200,0);
+}
+@font-face {
+    font-family: font1; /*这里是说明调用来的字体名字*/
+    src: url('font1.ttf'); /*这里是字体文件路径*/
+}
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+
+    /*Center slide text vertically*/
+    /*display: -webkit-box;*/
+    /*display: -ms-flexbox;*/
+    /*display: -webkit-flex;*/
+    /*display: flex;*/
+    /*-webkit-box-pack: center;*/
+    /*-ms-flex-pack: center;*/
+    /*-webkit-justify-content: center;*/
+    /*justify-content: center;*/
+    /*-webkit-box-align: center;*/
+    /*-ms-flex-align: center;*/
+    /*-webkit-align-items: center;*/
+    /*align-items: center;*/
+}
+.page1{
+    background: url('../img/page1/page1.jpg') no-repeat;
+    background-size: 100% 100%;
+}
+.page2,.page3,.page4,.page5,.page6,.page7,.page8{
+    background: url('../img/public/bg.jpg') no-repeat;
+    background-size: 100% 100%;
+}
+#begin{
+    width: 36%;
+    height: auto;
+    position: absolute;
+    top:86%;
+    left: 32%;
+    animation-iteration-count:infinite;
+}
+.xiaoni{
+    width: 20%;
+    height: auto;
+    position: absolute;
+    top: 52%;
+    left: 73%;
+    -webkit-transform:rotate(-10deg); /* Safari 和 Chrome */
+    -webkit-transform-origin:50% 0%; /* Safari 和 Chrome */
+    -webkit-animation: myfirst2 5s infinite;	/* Safari 和 Chrome */
+}
+
+@-webkit-keyframes myfirst2 /* Safari 和 Chrome */
+{
+    50%{
+        -webkit-transform:rotate(20deg); /* Safari 和 Chrome */
+    }
+}
+.painting{
+    width: 94%;
+    height: auto;
+    position: absolute;
+    top: 2%;
+    left: 3%;
+}
+.problem{
+    width: 76%;
+    height: auto;
+    position: absolute;
+    top: 43%;
+    left: 12%;
+}
+.answer{
+    width: 80%;
+    height: 8%;
+    position: absolute;
+    left: 10%;
+}
+.next{
+    width: 16%;
+    height: auto;
+    position: absolute;
+    left: 79%;
+    top:93%;
+}
+.page8{
+    background: url('../img/page8/page7.jpg') no-repeat;
+    background-size: 100% 100%;
+}
+.kuang{
+    width: 88%;
+    height: auto;
+    position: absolute;
+    top: 7%;
+    left: 6%;
+}
+#sq{
+    width: 27%;
+    height: auto;
+    position: absolute;
+    top: 88%;
+    left: 67%;
+}
+#zcyc{
+    width: 27%;
+    height: auto;
+    position: absolute;
+    top: 88%;
+    left: 4%;
+}
+#jrhy{
+    width: 27%;
+    height: auto;
+    position: absolute;
+    top: 88%;
+    left: 35%;
+    z-index: 99;
+}
+#score{
+    font-family: font1;
+    font-size: 90px;
+    font-weight: 900;
+    color: #12357e;
+    position: absolute;
+    top: 19%;
+    width: 100%;
+}
+#introduce{
+    font-family: font1;
+    font-size: 0.9em;
+    color: #12357e;
+    position: absolute;
+    top: 34%;
+    width: 100%;
+}
+.dian{
+    width: 5%;
+    height: auto;
+    margin-top: 4%;
+    margin-left: 81%;
+}
+.cb{
+    width: 57%;
+    height: auto;
+    position: absolute;
+    left: 18%;
+    top: 41%;
+}
+.fs{
+    width: 62%;
+    height: auto;
+    position: absolute;
+    left: 25%;
+    top: 41%;
+}
+.qs{
+    width: 35%;
+    height: auto;
+    position: absolute;
+    left: 31%;
+    top: 41%;
+}
+.yr{
+    width: 54%;
+    height: auto;
+    position: absolute;
+    left: 24%;
+    top: 40%;
+}
+.yx{
+    width: 40%;
+    height: auto;
+    position: absolute;
+    left: 26%;
+    top: 40%;
+}
+.share{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}

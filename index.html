@@ -1,0 +1,100 @@
+﻿<!doctype html>
+<html>
+<head>
+    <title>NIVEA</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/alert.css">
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?6e4e143483d97e196168a2bdd889f56d";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/swiper.jquery.min.js"></script>
+    <script src="js/md5.min.js"></script>
+    <script src="https://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+</head>
+<body>
+<div class="swiper-container swiper-container-v">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide page1 stop-swiping">
+            <img class="ani" swiper-animate-effect="pulse" swiper-animate-duration="1s" swiper-animate-delay="0s" id="begin" src="img/page1/p1-btn.png" alt="">
+            <img class="xiaoni" src="img/page1/xiaoni.png" alt="">
+        </div>
+        <div id="question1" class="swiper-slide page2 stop-swiping">
+            <img class="painting ani" swiper-animate-effect="bounceIn" swiper-animate-duration="1s" swiper-animate-delay="0s" src="img/page2/q1-h.png" alt="">
+            <img class="problem ani" swiper-animate-effect="bounceIn" swiper-animate-duration="1s" swiper-animate-delay="0.5s" src="img/page2/q1.png" alt="">
+            <div ans="30分钟以下" score="5" style="top: 55%;background: url('img/page2/a1.png') no-repeat;background-size: 100% auto;" class="answer ani" swiper-animate-effect="bounceInRight" swiper-animate-duration="1s" swiper-animate-delay="0.75s"></div>
+            <div ans="30-120分钟" score="20" style="top: 64%;background: url('img/page2/a2.png') no-repeat;background-size: 100% auto;" class="answer ani" swiper-animate-effect="bounceInRight" swiper-animate-duration="1s" swiper-animate-delay="1s"></div>
+            <div ans="120分钟-240分钟" score="30" style="top: 73%;background: url('img/page2/a3.png') no-repeat;background-size: 100% auto;" class="answer ani" swiper-animate-effect="bounceInRight" swiper-animate-duration="1s" swiper-animate-delay="1.25s"></div>
+            <div ans="很久" score="15" style="top: 82%;background: url('img/page2/a4.png') no-repeat;background-size: 100% auto;" class="answer ani" swiper-animate-effect="bounceInRight" swiper-animate-duration="1s" swiper-animate-delay="1.5s"></div>
+            <img onclick="answerFun(1)" class="next ani" swiper-animate-effect="bounceInRight" swiper-animate-duration="1s" swiper-animate-delay="1.75s" src="img/public/next.png" alt="">
+        </div>
+        <div id="question2" class="swiper-slide page3 stop-swiping">
+            <img class="painting ani" swiper-animate-effect="bounceIn" swiper-animate-duration="1s" swiper-animate-delay="0s" src="img/page3/q2-h.png" alt="">
+            <img class="problem ani" swiper-animate-effect="bounceIn" swiper-animate-duration="1s" swiper-animate-delay="0.5s" src="img/page3/q2.png" alt="">
+            <div ans=" 很快变油" score="5" style="top: 55%;background: url('img/page3/a1.png') no-repeat;background-size: 100% auto;" class="answer ani" swiper-animate-effect="bounceInRight" swiper-animate-duration="1s" swiper-animate-delay="0.75s"></div>
+            <div ans=" 干痒不适" score="15" style="top: 64%;background: url('img/page3/a2.png') no-repeat;background-size: 100% auto;" class="answer ani" swiper-animate-effect="bounceInRight" swiper-animate-duration="1s" swiper-animate-delay="1s"></div>
+            <div ans=" 稍有紧绷" score="20" style="top: 73%;background: url('img/page3/a3.png') no-repeat;background-size: 100% auto;" class="answer ani" swiper-animate-effect="bounceInRight" swiper-animate-duration="1s" swiper-animate-delay="1.25s"></div>
+            <div ans=" 毫无压力" score="30" style="top: 82%;background: url('img/page3/a4.png') no-repeat;background-size: 100% auto;" class="answer ani" swiper-animate-effect="bounceInRight" swiper-animate-duration="1s" swiper-animate-delay="1.5s"></div>
+            <img onclick="answerFun(2)" class="next ani" swiper-animate-effect="bounceInRight" swiper-animate-duration="1s" swiper-animate-delay="1.75s" src="img/public/next.png" alt="">
+        </div>
+        <div id="question3" class="swiper-slide page4 stop-swiping">
+            <img class="painting ani" swiper-animate-effect="bounceIn" swiper-animate-duration="1s" swiper-animate-delay="0s" src="img/page4/q3-h.png" alt="">
+            <img class="problem ani" swiper-animate-effect="bounceIn" swiper-animate-duration="1s" swiper-animate-delay="0.5s" src="img/page4/q3.png" alt="">
+            <div ans=" 涂防晒霜" score="30" style="top: 55%;background: url('img/page4/a1.png') no-repeat;background-size: 100% auto;" class="answer ani" swiper-animate-effect="bounceInRight" swiper-animate-duration="1s" swiper-animate-delay="0.75s"></div>
+            <div ans=" 打遮阳伞" score="20" style="top: 64%;background: url('img/page4/a2.png') no-repeat;background-size: 100% auto;" class="answer ani" swiper-animate-effect="bounceInRight" swiper-animate-duration="1s" swiper-animate-delay="1s"></div>
+            <div ans=" 戴棒球帽" score="10" style="top: 73%;background: url('img/page4/a3.png') no-repeat;background-size: 100% auto;" class="answer ani" swiper-animate-effect="bounceInRight" swiper-animate-duration="1s" swiper-animate-delay="1.25s"></div>
+            <div ans=" 放弃治疗" score="5" style="top: 82%;background: url('img/page4/a4.png') no-repeat;background-size: 100% auto;" class="answer ani" swiper-animate-effect="bounceInRight" swiper-animate-duration="1s" swiper-animate-delay="1.5s"></div>
+            <img onclick="answerFun(3)" class="next ani" swiper-animate-effect="bounceInRight" swiper-animate-duration="1s" swiper-animate-delay="1.75s" src="img/public/next.png" alt="">
+        </div>
+        <div id="question4" class="swiper-slide page5 stop-swiping">
+            <img class="painting ani" swiper-animate-effect="bounceIn" swiper-animate-duration="1s" swiper-animate-delay="0s" src="img/page5/q4-h.png" alt="">
+            <img class="problem ani" swiper-animate-effect="bounceIn" swiper-animate-duration="1s" swiper-animate-delay="0.5s" src="img/page5/q4.png" alt="">
+            <div ans=" 自然舒适，没其他感觉" score="30" style="top: 55%;background: url('img/page5/a1.png') no-repeat;background-size: 100% auto;" class="answer ani" swiper-animate-effect="bounceInRight" swiper-animate-duration="1s" swiper-animate-delay="0.75s"></div>
+            <div ans=" 轻微出汗，风吹腋下凉" score="20" style="top: 64%;background: url('img/page5/a2.png') no-repeat;background-size: 100% auto;" class="answer ani" swiper-animate-effect="bounceInRight" swiper-animate-duration="1s" swiper-animate-delay="1s"></div>
+            <div ans=" 出汗较重，有异味" score="15" rec="deo" style="top: 73%;background: url('img/page5/a3.png') no-repeat;background-size: 100% auto;" class="answer ani" swiper-animate-effect="bounceInRight" swiper-animate-duration="1s" swiper-animate-delay="1.25s"></div>
+            <div ans=" “气”场十足，不敢近身" score="5" rec="deo" style="top: 82%;background: url('img/page5/a4.png') no-repeat;background-size: 100% auto;" class="answer ani" swiper-animate-effect="bounceInRight" swiper-animate-duration="1s" swiper-animate-delay="1.5s"></div>
+            <img onclick="answerFun(4)" class="next ani" swiper-animate-effect="bounceInRight" swiper-animate-duration="1s" swiper-animate-delay="1.75s" src="img/public/next.png" alt="">
+        </div>
+        <div id="question5" class="swiper-slide page6 stop-swiping">
+            <img class="painting ani" swiper-animate-effect="bounceIn" swiper-animate-duration="1s" swiper-animate-delay="0s" src="img/page6/q5-h.png" alt="">
+            <img class="problem ani" swiper-animate-effect="bounceIn" swiper-animate-duration="1s" swiper-animate-delay="0.5s" src="img/page6/q5.png" alt="">
+            <div ans=" 性感饱满，吹弹可破" score="30" style="top: 55%;background: url('img/page6/a1.png') no-repeat;background-size: 100% auto;" class="answer ani" swiper-animate-effect="bounceInRight" swiper-animate-duration="1s" swiper-animate-delay="0.75s"></div>
+            <div ans=" 红润光泽，不干不躁" score="20" style="top: 64%;background: url('img/page6/a2.png') no-repeat;background-size: 100% auto;" class="answer ani" swiper-animate-effect="bounceInRight" swiper-animate-duration="1s" swiper-animate-delay="1s"></div>
+            <div ans=" 暗淡无光，毫无气质" score="15" rec="lip" style="top: 73%;background: url('img/page6/a3.png') no-repeat;background-size: 100% auto;" class="answer ani" swiper-animate-effect="bounceInRight" swiper-animate-duration="1s" swiper-animate-delay="1.25s"></div>
+            <div ans=" 干裂起皮，心疼寄几" score="5" rec="lip" style="top: 82%;background: url('img/page6/a4.png') no-repeat;background-size: 100% auto;" class="answer ani" swiper-animate-effect="bounceInRight" swiper-animate-duration="1s" swiper-animate-delay="1.5s"></div>
+            <img onclick="answerFun(5)" class="next ani" swiper-animate-effect="bounceInRight" swiper-animate-duration="1s" swiper-animate-delay="1.75s" src="img/public/next.png" alt="">
+        </div>
+        <div id="question6" class="swiper-slide page7 stop-swiping">
+            <img class="painting ani" swiper-animate-effect="bounceIn" swiper-animate-duration="1s" swiper-animate-delay="0s" src="img/page7/q6-h.png" alt="">
+            <img class="problem ani" swiper-animate-effect="bounceIn" swiper-animate-duration="1s" swiper-animate-delay="0.5s" src="img/page7/q6.png" alt="">
+            <div ans=" 拒绝非酋，我要变白" score="30" rec="fs" style="top: 55%;background: url('img/page7/a1.png') no-repeat;background-size: 100% auto;" class="answer ani" swiper-animate-effect="bounceInRight" swiper-animate-duration="1s" swiper-animate-delay="0.75s"></div>
+            <div ans=" 每一寸肌肤" score="20" rec="qs" style="top: 64%;background: url('img/page7/a2.png') no-repeat;background-size: 100% auto;" class="answer ani" swiper-animate-effect="bounceInRight" swiper-animate-duration="1s" swiper-animate-delay="1s"></div>
+            <div ans=" 不要出油，痘痘消失" score="15" rec="yr" style="top: 73%;background: url('img/page7/a3.png') no-repeat;background-size: 100% auto;" class="answer ani" swiper-animate-effect="bounceInRight" swiper-animate-duration="1s" swiper-animate-delay="1.25s"></div>
+            <div ans=" 直接换人吧 " score="5" rec="qs" style="top: 82%;background: url('img/page7/a4.png') no-repeat;background-size: 100% auto;" class="answer ani" swiper-animate-effect="bounceInRight" swiper-animate-duration="1s" swiper-animate-delay="1.5s"></div>
+            <img onclick="answerFun(6)" class="next ani" swiper-animate-effect="bounceInRight" swiper-animate-duration="1s" swiper-animate-delay="1.75s" src="img/public/next.png" alt="">
+        </div>
+        <div class="swiper-slide page8 stop-swiping">
+            <img class="kuang" src="img/page8/kuang.png" alt="">
+            <p id="score"></p>
+            <p id="introduce"></p>
+            <img id="sq" src="img/page8/sq.png" alt="">
+            <a href="https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx36310fe660ca89bd&redirect_uri=http%3A%2F%2Fnivea.sweetmartmarketing.com%2FcrmSrv%2Fwx%2FzexWxNvy%3fappid%3dwx36310fe660ca89bd&response_type=code&scope=snsapi_userinfo&state=wx&component_appid=wx757dd6d09794aee2#wechat_redirect"><img id="jrhy" src="img/page8/jrhy.png" alt=""></a>
+            <img id="zcyc" src="img/page8/zcyc.png" alt="">
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="js/alert.js"></script>
+<script type="text/javascript" src="js/swiper.animate1.0.2.min.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>
