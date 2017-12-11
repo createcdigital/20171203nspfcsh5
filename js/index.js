@@ -364,7 +364,7 @@ $("#zcyc").click(function () {
     localStorage.removeItem("score");
     localStorage.removeItem("rec");
     _hmt.push(['_trackEvent', '按钮', '再测一次', 'literature']);
-    window.location.href='http://nivea.watchinga.net/crm/nxpfcscs/share.html';
+    window.location.href='http://nivea.fphis.com/crm/nxpfcs-n/share.html';
 })
 
 //显示结果的函数
@@ -386,8 +386,8 @@ var result = function (score,rec) {
     wx.ready(function () {
         wx.onMenuShareTimeline({
             title: 'NIVEA', // 分享标题
-            link: "http://nivea.watchinga.net/crm/nxpfcscs/share.html?score="+score+"&rec="+rec+"", // 分享链接，该链接域名或路径必须与当前页面对应的公众号JS安全域名一致
-            imgUrl: 'http://nivea.watchinga.net/crm/xndrc/img/logo.png', // 分享图标
+            link: "http://nivea.fphis.com/crm/nxpfcs-n/share.html?score="+score+"&rec="+rec+"", // 分享链接，该链接域名或路径必须与当前页面对应的公众号JS安全域名一致
+            imgUrl: 'http://nivea.fphis.com/crm/nxpfcs-n/img/logo.png', // 分享图标
             success: function () {
                 getIntegral(apiUrl,'11032','内容分享获取积分',2);
                 _hmt.push(['_trackEvent', '分享', '朋友圈', 'literature']);
@@ -396,8 +396,8 @@ var result = function (score,rec) {
         wx.onMenuShareAppMessage({
             title: 'NIVEA', // 分享标题
             desc: 'NIVEA女性皮肤测试', // 分享描述
-            link: "http://nivea.watchinga.net/crm/nxpfcscs/share.html?score="+score+"&rec="+rec+"", // 分享链接，该链接域名或路径必须与当前页面对应的公众号JS安全域名一致
-            imgUrl: 'http://nivea.watchinga.net/crm/xndrc/img/logo.png', // 分享图标
+            link: "http://nivea.fphis.com/crm/nxpfcs-n/share.html?score="+score+"&rec="+rec+"", // 分享链接，该链接域名或路径必须与当前页面对应的公众号JS安全域名一致
+            imgUrl: 'http://nivea.fphis.com/crm/nxpfcs-n/img/logo.png', // 分享图标
             type: '', // 分享类型,music、video或link，不填默认为link
             dataUrl: '', // 如果type是music或video，则要提供数据链接，默认为空
             success: function () {
@@ -420,7 +420,7 @@ var timestamp;
 var nonceStr;
 var signature;
 $.ajax({
-    url:'http://nivea.watchinga.net/api/jsconfigure',
+    url:'http://nivea.fphis.com/api/jsconfigure',
     type:'POST',
     async: false,
     data:{url:url},
@@ -452,8 +452,8 @@ if(!score2 && !window.localStorage.score){
     wx.ready(function () {
         wx.onMenuShareTimeline({
             title: 'NIVEA', // 分享标题
-            link: "http://nivea.watchinga.net/crm/nxpfcscs/share.html", // 分享链接，该链接域名或路径必须与当前页面对应的公众号JS安全域名一致
-            imgUrl: 'http://nivea.watchinga.net/crm/xndrc/img/logo.png', // 分享图标
+            link: "http://nivea.fphis.com/crm/nxpfcs-n/share.html", // 分享链接，该链接域名或路径必须与当前页面对应的公众号JS安全域名一致
+            imgUrl: 'http://nivea.fphis.com/crm/nxpfcs-n/img/logo.png', // 分享图标
             success: function () {
                 _hmt.push(['_trackEvent', '分享', '朋友圈', 'literature']);
                 getIntegral(apiUrl,'11032','内容分享获取积分',2);
@@ -462,8 +462,8 @@ if(!score2 && !window.localStorage.score){
         wx.onMenuShareAppMessage({
             title: 'NIVEA', // 分享标题
             desc: 'NIVEA女性皮肤测试', // 分享描述
-            link: "http://nivea.watchinga.net/crm/nxpfcscs/share.html", // 分享链接，该链接域名或路径必须与当前页面对应的公众号JS安全域名一致
-            imgUrl: 'http://nivea.watchinga.net/crm/xndrc/img/logo.png', // 分享图标
+            link: "http://nivea.fphis.com/crm/nxpfcs-n/share.html", // 分享链接，该链接域名或路径必须与当前页面对应的公众号JS安全域名一致
+            imgUrl: 'http://nivea.fphis.com/crm/nxpfcs-n/img/logo.png', // 分享图标
             type: '', // 分享类型,music、video或link，不填默认为link
             dataUrl: '', // 如果type是music或video，则要提供数据链接，默认为空
             success: function () {
